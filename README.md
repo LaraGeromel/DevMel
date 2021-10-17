@@ -1,4 +1,3 @@
-# http://devmel.github.io
+# https://larageromel.github.io/DevMel/
 My personal website
 
-https://larageromel.github.io/DevMel/
