@@ -1,0 +1,1143 @@
+@charset "UTF-8";
+
+/* Itens Import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* ROOT */
+
+:root {
+    --color-darkred: darkred;
+}
+
+/* CSS */
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- Header Inicio -- */
+#topo {
+    width: 100%;
+    height: 15vh;
+    background-color: gainsboro;
+    position: relative;
+}
+
+#logo {                 /* Inicio Logotipo */
+    width: 30%;
+    height: auto;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 8%;
+}                      
+                         /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    position: absolute;
+    top: 0%;
+    left: 33%;
+}
+
+#social li {
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+#social a {
+    color: var(--color-darkred);
+    font-size: 1.5em;
+}
+
+#social a:hover {
+    color: rgb(194, 3, 3);
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: block;
+}
+
+
+                        /* Fim redes sociais */
+
+
+#menu_div {                 /* Inicio Menu */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 75%;
+}
+
+#navegacao {
+    width: 100%;
+    height: 100%;
+}
+#navegacao ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao li {
+    padding: 0;
+}
+
+#navegacao a {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 3% 0;
+    color: ghostwhite;
+    background-color:var(--color-darkred);
+    text-align: center;
+}
+
+#navegacao a:hover {
+    background-color: rgb(161, 51, 51);
+    text-decoration: underline;
+}
+                            /* Fim Menu */
+
+/* -- Header Fim -- */
+
+
+/* -- Main Inicio -- */
+
+section {
+    margin: 1% 0;
+    padding: 0;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+section:nth-child(2) {
+    margin-top: 25%;
+}
+
+#primeiro {
+    margin-top: 0;
+    padding-top: 1%;
+}
+
+.conteudo {
+    margin: 6vh 1.5vw 5vh 1.5vw;
+    padding: .5% 2%;
+    background-color: rgb(216, 213, 213);
+    border: 3px double rgba(0, 0, 0, 0.61);
+    box-sizing: border-box;
+}
+
+.grupos {
+    margin: 0;
+    padding: 0;
+}
+
+.artigos {
+    margin: 0 2%;
+    padding: .1% 2%;
+    background-color: rgb(216, 213, 213);
+}
+
+.button {
+    display: inline-block;
+    margin: .5em auto;
+    padding: .8em;
+    background-color: var(--color-darkred);
+    color: whitesmoke;
+    letter-spacing: 2px;
+    border: 1px solid rgb(131, 52, 52);
+    border-radius: .5em;
+}
+
+.button:hover {
+    background-color: rgb(177, 6, 6);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 3px 3px 5px rgb(75, 0, 0);
+}
+
+.ilustracao {
+    width: 100%;
+    height: 250px;
+}
+
+#i1 {
+    background: url(../img/site1grande.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#i2 {
+    background: url(../img/site2grande.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#i3 {
+    background: url(../img/site3grande.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#i4 {
+    background: url(../img/site4grande.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#i5 {
+    background: url(../img/site5pequeno.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -- Main Fim -- */
+
+
+/* -- Footer Inicio -- */
+
+footer {
+    margin: 0;
+    padding: 2px 0;
+    text-align: center;
+    background-color: rgb(216, 213, 213);
+    text-shadow: 1px 0px 1px rgb(31, 31, 31);
+}
+
+/* -- Footer Fim -- */
+
+
+/* ----------------------------------------------------------------------------------------- */
+/*                                  |       Query        |                                   */
+/* ----------------------------------------------------------------------------------------- */
+
+/* 359px */
+@media screen and (min-width: 22.44em) and (orientation: portrait) {
+    /* -- Header Inicio -- */
+#topo {
+    height: 10vh;
+}
+
+#logo {                 /* Inicio Logotipo */
+    width: 30%;
+}
+
+#logo img {
+    margin-left: 2%;
+    margin-top: 6%;
+}                      
+                        /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    top: 7%;
+}
+
+
+                        /* Fim redes sociais */
+
+/* -- Header Fim -- */
+
+
+}
+
+/* 480px */
+@media screen and (min-width: 30em) {
+        
+        /* -- Header Inicio -- */
+    #topo {
+        height: 10vh;
+    }
+
+    #logo {                 /* Inicio Logotipo */
+        width: 22%;
+    }
+
+    #logo img {
+        margin-left: 1%;
+        margin-top: 8%;
+    }                      
+                            /* Fim Logotipo */
+
+
+    #social {                 /* Inicio Redes Sociais */
+        top: 13%;
+        left: 33%;
+        z-index: 1;
+    }
+
+    #social li {
+        display: inline-block;
+        padding-right: .6em;
+
+    }
+   
+
+                            /* Fim redes sociais */
+
+
+    #menu_div {                 /* Inicio Menu */
+        top: 50%;
+        left: 50%;
+        width: 50%;
+    }
+
+    #navegacao ul {
+        margin: -1em 1em 0 1em;
+        padding: 0;
+        float: right;
+    }
+
+    #navegacao li {
+        display: inline-block;
+        margin-left: 1.5em;
+    }
+    #navegacao li:last-child {
+        margin-right: 1em;
+    }
+
+    #navegacao a {
+        display: inline-block;
+        padding: .5em;
+        border-radius: 1em;
+        
+    }
+
+    #navegacao a:hover {
+        background-color: rgb(187, 1, 1);
+        text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.699);
+        box-shadow: 1px 1px 1px rgb(75, 0, 0);
+    }
+                                /* Fim Menu */
+
+    /* -- Header Fim -- */
+
+
+
+    /* -- Main Inicio -- */
+
+    section:nth-child(2) {
+        margin-top: 5%;
+    }
+    
+
+    .ilustracao {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* -- Main Fim -- */
+
+}
+
+
+/* 567px */
+@media screen and (min-width: 35.44em) and (orientation: landscape) {
+        
+    /* -- Header Inicio -- */
+#topo {
+    height: 20vh;
+}
+
+/* Inicio Logotipo */
+
+#logo img {
+    margin-left: 2%;
+    margin-top: 3%;
+}                      
+                        /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    top: 3%;
+    left: 32%;
+}
+
+
+                        /* Fim redes sociais */
+
+/* -- Header Fim -- */
+
+}
+
+/* 720px */
+@media screen and (min-width: 45em) and (orientation: portrait) {
+            
+        /* -- Header Inicio -- */
+
+        #logo {                 /* Inicio Logotipo */
+            width: 15%;
+        }
+    
+        #logo img {
+            margin-top: 23%;
+        }                      
+                                /* Fim Logotipo */
+    
+    
+        #social {                 /* Inicio Redes Sociais */
+            top: 6%;
+            left: 38%;
+            font-size: 1.5em;
+        }
+    
+                                /* Fim redes sociais */
+    
+        /* -- Header Fim -- */
+    
+    
+    
+        /* -- Main Inicio -- */
+
+        .artigos:last-child {
+            padding-bottom: 1em;
+        }
+
+        .artigos p {
+            margin: 2em 1em;
+        }
+
+        .button {
+            margin: .5em 1em;
+        }
+    
+        .ilustracao {
+            width: 80%;
+            height: 40vh;
+        }
+
+        /* -- Main Fim -- */
+
+        /* -- Footer Inicio -- */
+
+        footer {
+            padding: 10px 0;
+        }
+
+        /* -- Footer Fim -- */
+
+}
+
+
+/* 779px */
+@media screen and (min-width: 48.69em) and (orientation: landscape) {
+        
+    /* -- Header Inicio -- */
+#topo {
+    height: 20vh;
+}
+
+#logo {                 /* Inicio Logotipo */
+    width: 18%;
+}
+
+#logo img {
+    margin-left: 2%;
+    margin-top: 1%;
+}                      
+                        /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    top: 0%;
+    left: 35%;
+}
+
+#social a { 
+    font-size: 1.7em;
+}
+    /* -- Header Inicio -- */
+}
+
+
+/* 799px */
+@media screen and (min-width: 49.94em) and (orientation: portrait) {
+
+            /* -- Header Inicio -- */
+
+            #topo {
+                height: 8vh;
+            }
+
+            #logo {                 /* Inicio Logotipo */
+                width: 18%;
+            }
+        
+            #logo img {
+                margin-top: 12%;
+            }                      
+                                    /* Fim Logotipo */
+        
+        
+            #social {                 /* Inicio Redes Sociais */
+                top: 8%;
+                left: 38%;
+                font-size: 1.5em;
+            }
+        
+                                    /* Fim redes sociais */
+        
+            /* -- Header Fim -- */
+
+
+    /* -- Main Inicio -- */
+    .grupos {
+        width: 100%;
+        clear: both;
+
+    }
+
+    .artigos:last-child {
+        padding-bottom: 0;
+    }
+
+    .artigos {
+        height: 660px;
+        width: 44%;
+        margin: 1%;
+        padding-left: 2%;
+        float: left;
+    }
+
+    .artigos p {
+        display: inline-block;
+        height: 90px;
+        margin: 2em auto;
+    }
+
+    #primeiro {
+        margin-top: 5.7%;
+        padding-top: 0;
+    }
+
+    .ilustracao {
+        width: 100%;
+        height: 350px;
+    }
+    /* -- Main Fim -- */
+
+
+    footer {
+        clear: both;
+    }
+}
+
+
+/* 811px */
+@media screen and (min-width: 50.69em) and (orientation: landscape) {
+        
+    /* -- Header Inicio -- */
+#topo {
+    height: 20vh;
+}
+
+#logo {                 /* Inicio Logotipo */
+    width: 20%;
+}
+
+#logo img {
+    margin-left: 2%;
+    margin-top: 5%;
+}                      
+                        /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    top: 14%;
+    left: 38%;
+}
+
+#social a { 
+    font-size: 1.7em;
+}
+    /* -- Header Inicio -- */
+
+}
+
+
+/* 843px */
+@media screen and (min-width: 53.69em) and (orientation: landscape) {
+        
+    /* -- Header Inicio -- */
+#topo {
+    height: 20vh;
+}
+
+#logo {                 /* Inicio Logotipo */
+    width: 18%;
+}
+
+#logo img {
+    margin-left: 5%;
+    margin-top: 7%;
+}                      
+                        /* Fim Logotipo */
+
+
+#social {                 /* Inicio Redes Sociais */
+    top: 18%;
+    left: 38%;
+}
+    /* -- Header Inicio -- */
+}
+
+
+/* 883px */
+@media screen and (min-width: 55.19em) and (orientation: portrait) {
+
+    /* -- Header Inicio -- */
+
+    #topo {
+        height: 8vh;
+    }
+
+    #logo {                 /* Inicio Logotipo */
+        width: 18%;
+    }
+
+    #logo img {
+        margin-top: 6%;
+    }                      
+                            /* Fim Logotipo */
+
+
+    #social {                 /* Inicio Redes Sociais */
+        top: 1%;
+        left: 38%;
+        font-size: 1.5em;
+    }
+
+                            /* Fim redes sociais */
+
+    /* -- Header Fim -- */
+}
+
+/* 1000px */
+@media screen and (min-width: 62.5em) {
+
+    /* -- Header Inicio -- */
+
+    #topo {
+        border-bottom: 3px double rgba(0, 0, 0, 0.61);
+        box-sizing: border-box;
+    }
+
+    #logo {                 /* Inicio Logotipo */
+        width: 12vw;
+    }
+                    
+                             /* Fim Logotipo */
+
+    /* -- Header Fim -- */
+
+
+    /* -- Main Inicio -- */
+    @keyframes slide {              /* Inicio Slide */
+        0%, 17%, 100% {
+            transform: translateY(0)
+        }
+
+        20%, 37% {
+            transform: translateY(-55vh)
+        }
+        
+        40%, 57% {
+            transform: translateY(-110.1vh)
+        }
+
+        60%, 77% {
+            transform: translateY(-165.3vh)
+        }
+
+        80%, 97% {
+            transform: translateY(-223vh)
+        }
+    }
+
+    #slide-externo {
+        height: 55.5vh;
+        width: 80vw;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        overflow: hidden;
+        border: 5px solid rgba(139, 0, 0, 0.692);
+        box-sizing: border-box;
+    }
+
+    .slide-interno{
+        height: 55.5vh;
+        width: 100%;
+        animation: slide 10s cubic-bezier(.37,-0.44,.61,1.53) 5s infinite;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+
+    #s1 {
+        background: url(../img/site1grande.png) no-repeat;
+        background-size: 100%;
+    }
+
+    #s2 {
+        background: url(../img/site2grande.png) no-repeat;
+        background-size: 100%;
+    }
+
+    #s3 {
+        background: url(../img/site3grande.png) no-repeat;
+        background-size: 100%;
+    }
+
+    #s4 {
+        background: url(../img/site4grande.png) no-repeat;
+        background-size: 100%;
+    }
+
+    #s5 {
+        background: url(../img/site5pequeno.png) no-repeat;
+        background-size: 100%;
+    }                                   
+    
+    /* Fim Slide */
+
+    #primeiro {
+        margin-top: 4.5%;
+        padding-top: 0;
+    }
+
+    .artigos {
+        height: 95vh;
+        width: 46vw;
+        margin: 1vh 1.5vw;
+        padding-left: 2vw;
+        border: 3px double rgba(0, 0, 0, 0.61);
+        box-sizing: border-box;
+    }
+
+    /* -- Main Fim -- */
+
+    footer {
+        border-top: 3px double rgba(0, 0, 0, 0.61);
+        box-sizing: border-box;
+    }
+}
+
+
+/* 1023px */
+@media screen and (min-width: 63.94em) and (orientation: landscape) {
+    /* -- Header Inicio -- */
+
+    #topo {
+        height: 10vh;
+    }
+
+    #logo {                 /* Inicio Logotipo */
+        width: 13%;
+    }
+
+    #logo img {
+        margin-top: 7%;
+    }                      
+                            /* Fim Logotipo */
+
+
+    #social {                 /* Inicio Redes Sociais */
+        top: -7%;
+        left: 45%;
+        font-size: 1.5em;
+    }
+
+    #social a {
+        font-size: 1.5em;
+    }
+
+                            /* Fim redes sociais */
+
+    /* -- Header Fim -- */
+
+    /* -- Main Inicio -- */
+
+    .artigos {
+        height: 70vh;
+        width: 46vw;
+        margin: 1vh 1.5vw;
+        padding-left: 2vw;
+        float: left;
+        border: 3px double rgba(0, 0, 0, 0.61);
+        box-sizing: border-box;
+    }
+
+    .artigos:last-child {
+        margin-bottom: 2%;
+    }
+
+    /* -- Main Fim -- */
+
+    footer {
+        clear: both;
+        padding: 1% 0;
+    }
+}
+
+
+/* 1100px */
+@media screen and (min-width: 68.75em) {
+
+        /* -- Header Inicio -- */
+    
+        #logo {                 /* Inicio Logotipo */
+            width: 10vw;
+            height: auto;
+        }
+        
+        #logo img {
+            margin-left: .5vw;
+        }                      
+                                 /* Fim Logotipo */
+    
+        /* -- Header Fim -- */
+
+
+        /* -- Main Inicio -- */
+
+            @keyframes slide {              /* Inicio Slide */
+        0%, 17%, 100% {
+            transform: translateY(0)
+        }
+
+        20%, 37% {
+            transform: translateY(-58.5vh)
+        }
+        
+        40%, 57% {
+            transform: translateY(-117vh)
+        }
+
+        60%, 77% {
+            transform: translateY(-175.5vh)
+        }
+
+        80%, 97% {
+            transform: translateY(-234.8vh)
+        }
+    }
+
+        #slide-externo {
+            height: 58.9vh;
+        }
+
+        .slide-interno{
+            height: 58.5vh;
+        }                       /* Fim Slide */
+
+
+        .artigos {
+            height: 89vh;
+        }   
+
+
+        /* -- Main Fim -- */
+}
+
+
+/* 1279px */
+@media screen and (min-width: 79.94em) and (orientation: landscape) {
+    /* -- Header Inicio -- */
+
+    #topo {
+        height: 10vh;
+    }
+
+    #logo {                 /* Inicio Logotipo */
+        width: 13%;
+    }
+
+    #logo img {
+        margin-top: 2%;
+    }                      
+                            /* Fim Logotipo */
+
+
+    #social {                 /* Inicio Redes Sociais */
+        top: -5%;
+        left: 45%;
+        font-size: 1.5em;
+    }
+
+    #social a {
+        font-size: 1.5em;
+    }
+
+                            /* Fim redes sociais */
+
+    /* -- Header Fim -- */
+
+    /* -- Main Inicio -- */
+
+    .artigos {
+        height: 70vh;
+        width: 46vw;
+        margin: 1vh 1.5vw;
+        padding-left: 2vw;
+        float: left;
+        border: 3px double rgba(0, 0, 0, 0.61);
+        box-sizing: border-box;
+    }
+
+    .artigos:last-child {
+        margin-bottom: 2%;
+    }
+
+    /* -- Main Fim -- */
+
+    footer {
+        clear: both;
+        padding: 1% 0;
+    }
+}
+
+
+/* 1300px */
+@media screen and (min-width: 81.25em) {
+
+    /* -- Main Inicio -- */
+
+    @keyframes slide {              /* Inicio Slide */
+        0%, 17%, 100% {
+            transform: translateY(0)
+        }
+
+        20%, 37% {
+            transform: translateY(-64vh)
+        }
+        
+        40%, 57% {
+            transform: translateY(-128vh)
+        }
+
+        60%, 77% {
+            transform: translateY(-128vh)
+        }
+
+        80%, 97% {
+            transform: translateY(-255.8vh)
+        }
+    }
+
+    #slide-externo {
+        height: 65vh;
+    }
+
+    .slide-interno{
+        height: 63.9vh;
+    }                       /* Fim Slide */
+
+    /* -- Main Fim -- */
+}
+
+
+/* 1600px */
+@media screen and (min-width: 100em) {
+
+    /* -- Header Inicio -- */
+
+    #logo {                 /* Logotipo */
+        width: 8.5vw;
+    }
+
+    #social {                 /* Redes Sociais */
+    position: absolute;
+    top: 0%;
+    left: 45%;
+}
+
+    /* -- Header Fim -- */
+
+
+    /* -- Main Inicio -- */
+
+    @keyframes slide {              /* Inicio Slide */
+        0%, 17%, 100% {
+            transform: translateY(0)
+        }
+
+        20%, 37% {
+            transform: translateY(-78vh)
+        }
+        
+        40%, 57% {
+            transform: translateY(-157vh)
+        }
+
+        60%, 77% {
+            transform: translateY(-235vh)
+        }
+
+        80%, 97% {
+            transform: translateY(-313vh)
+        }
+    }
+
+    #slide-externo {
+        height: 78vh;
+    }
+
+    .slide-interno{
+        height: 78vh;
+    }                       /* Fim Slide */
+
+    #s5 {
+        background: url(../img/site5grande.png) no-repeat;
+        background-size: 100%;
+    } 
+
+    #primeiro {
+        margin-top: 3.4%;
+    }
+
+    /* -- Main Fim -- */
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/*                                 |       CONTATO        |                                  */
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* -- Main Inicio -- */
+
+#principal {
+    position: relative;
+}
+
+.c-section{
+    margin: 0;
+    padding: 0;
+}
+
+.c-section__div {
+    margin: 20% 5%;
+    color: var(--color-darkred);
+}
+
+.c-section__div ul{
+    position: relative;
+    margin: 0;
+}
+
+.c-section__div li {
+    margin-top: 3%;
+    margin-left: -6%;
+}
+
+.icon li::before {
+    content: url(../img/icon/pinred.svg);
+    height: 2vh;
+    width: 4vw;
+    display: inline-block;
+    padding-right: .5%;
+}
+
+.c-section__div a {
+    color: var(--color-darkred);
+}
+
+.c-section__div a:hover {
+    color: rgb(221, 5, 5);
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+
+/* -- Main Fim -- */
+
+
+/* ----------------------------------------------------------------------------------------- */
+/*                              |       CONTATO QUERY        |                               */
+/* ----------------------------------------------------------------------------------------- */
+
+
+/* 629px */
+@media screen and (min-width: 39.31em) and (orientation: landscape) {
+    
+    .c-section__div {
+        margin: 5% 5%;
+    }
+    
+    
+    .c-section__div li {
+        margin-left: -5%;
+    }
+
+}
+
+/* 629px */
+@media screen and (min-width: 39.31em) and (orientation: portrait) {
+    
+    .c-section__div {
+        margin: 10% 5%;
+    }
+    
+    
+    .c-section__div li {
+        margin-left: -5%;
+    }
+    
+}
+
+/* 1599px */
+@media screen and (min-width: 99.94em) {
+    
+    .c-section__div {
+        margin: 4% 6%;
+        color: var(--color-darkred);
+    }
+    
+    .c-section__div ul{
+        position: relative;
+        margin-left: 0;
+    }
+    
+    .c-section__div li {
+        margin-top: 3%;
+        margin-left: -1%;
+    }
+    
+    .icon li::before {
+        content: url(../img/icon/pinred.svg);
+        height: 2vh;
+        width: 2vw;
+        display: inline-block;
+        padding-right: .5%;
+    }
+
+}
