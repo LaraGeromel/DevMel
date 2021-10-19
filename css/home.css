@@ -7,7 +7,14 @@
 /* ROOT */
 
 :root {
-    --color-darkred: darkred;
+    --color-link_bg: rgb(17, 50, 139);
+    --color-link_bg-hover: rgb(19, 71, 216);
+    --color-link_border: rgb(0, 38, 141);
+    --color-button_bg: rgb(15, 54, 161);
+    --color-button_bg-hover: navy;
+    --color-button_border: rgb(0, 38, 141);
+    --color-body: rgb(227, 241, 241);
+    --color-destaque: rgb(218, 230, 233);
 }
 
 /* CSS */
@@ -15,12 +22,13 @@ body, html {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(230, 230, 230);
+    background-color: var(--color-body);
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Oswald', sans-serif;
+    color: navy;
 }
 
 ul {
@@ -35,7 +43,7 @@ a {
 #topo {
     width: 100%;
     height: 15vh;
-    background-color: gainsboro;
+    background-color: var(--color-destaque);
     position: relative;
 }
 
@@ -66,12 +74,19 @@ a {
 }
 
 #social a {
-    color: var(--color-darkred);
+    color: var(--color-link_bg);
     font-size: 1.5em;
 }
 
-#social a:hover {
-    color: rgb(194, 3, 3);
+.icon-linkedin:hover {
+    color: var(--color-link_bg-hover);
+    text-shadow: 1px 1px 1px rgb(9, 206, 255);
+    box-shadow: 2px 2px 2px rgb(9, 206, 255);
+}
+
+.icon-github:hover {
+    color: var(--color-link_bg-hover);
+    text-shadow: 2px 2px 2px rgb(0, 197, 247);
 }
 
 .hidden{
@@ -111,12 +126,13 @@ a {
     height: auto;
     padding: 3% 0;
     color: ghostwhite;
-    background-color:var(--color-darkred);
+    background-color: var(--color-link_bg);
     text-align: center;
 }
 
 #navegacao a:hover {
-    background-color: rgb(161, 51, 51);
+    background-color: rgb(0, 42, 104);
+    font-size: 1.2em;
     text-decoration: underline;
 }
                             /* Fim Menu */
@@ -131,6 +147,7 @@ section {
     padding: 0;
     letter-spacing: 1.5px;
     text-align: justify;
+    color: #005e9c;
 }
 
 section:nth-child(2) {
@@ -145,8 +162,8 @@ section:nth-child(2) {
 .conteudo {
     margin: 6vh 1.5vw 5vh 1.5vw;
     padding: .5% 2%;
-    background-color: rgb(216, 213, 213);
-    border: 3px double rgba(0, 0, 0, 0.61);
+    background-color: var(--color-destaque);
+    border: 3px double #014e8191;
     box-sizing: border-box;
 }
 
@@ -158,24 +175,24 @@ section:nth-child(2) {
 .artigos {
     margin: 0 2%;
     padding: .1% 2%;
-    background-color: rgb(216, 213, 213);
+    background-color: var(--color-destaque);
 }
 
 .button {
     display: inline-block;
     margin: .5em auto;
     padding: .8em;
-    background-color: var(--color-darkred);
+    background-color: var(--color-button_bg);
     color: whitesmoke;
     letter-spacing: 2px;
-    border: 1px solid rgb(131, 52, 52);
+    border: 1px solid var(--color-link_border);
     border-radius: .5em;
 }
 
 .button:hover {
-    background-color: rgb(177, 6, 6);
+    background-color: var(--color-button_bg-hover);
     text-shadow: 2px 2px 2px black;
-    box-shadow: 3px 3px 5px rgb(75, 0, 0);
+    box-shadow: 3px 3px 5px var(--color-link_border);
 }
 
 .ilustracao {
@@ -228,8 +245,9 @@ footer {
     margin: 0;
     padding: 2px 0;
     text-align: center;
-    background-color: rgb(216, 213, 213);
-    text-shadow: 1px 0px 1px rgb(31, 31, 31);
+    background-color: var(--color-destaque);
+    text-shadow: 1px 0px 1px #00477ec0;
+    color: #014e8191;
 }
 
 /* -- Footer Fim -- */
@@ -331,11 +349,6 @@ footer {
         
     }
 
-    #navegacao a:hover {
-        background-color: rgb(187, 1, 1);
-        text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.699);
-        box-shadow: 1px 1px 1px rgb(75, 0, 0);
-    }
                                 /* Fim Menu */
 
     /* -- Header Fim -- */
@@ -647,7 +660,7 @@ footer {
 
     #topo {
         min-height: 75px;
-        border-bottom: 3px double rgba(0, 0, 0, 0.61);
+        border-bottom: 3px double #014e8191;
         box-sizing: border-box;
     }
 
@@ -689,7 +702,7 @@ footer {
         margin-top: 5vh;
         margin-left: 10vw;
         overflow: hidden;
-        border: 5px solid rgba(139, 0, 0, 0.692);
+        border: 8px solid rgba(12, 12, 12, 0.692);
         box-sizing: border-box;
     }
 
@@ -736,14 +749,14 @@ footer {
         min-height: 530px;
         margin: 1vh 1.5vw;
         padding-left: 2vw;
-        border: 3px double rgba(0, 0, 0, 0.61);
+        border: 3px double #014e8191;
         box-sizing: border-box;
     }
 
     /* -- Main Fim -- */
 
     footer {
-        border-top: 3px double rgba(0, 0, 0, 0.61);
+        border-top: 3px double #014e8191;
         box-sizing: border-box;
     }
 }
@@ -789,8 +802,6 @@ footer {
         margin: 1vh 1.5vw;
         padding-left: 2vw;
         float: left;
-        border: 3px double rgba(0, 0, 0, 0.61);
-        box-sizing: border-box;
     }
 
     .artigos:last-child {
@@ -906,8 +917,6 @@ footer {
         margin: 1vh 1.5vw;
         padding-left: 2vw;
         float: left;
-        border: 3px double rgba(0, 0, 0, 0.61);
-        box-sizing: border-box;
     }
 
     .artigos:last-child {
@@ -968,12 +977,12 @@ footer {
     /* -- Header Inicio -- */
 
     #logo {                 /* Logotipo */
-        width: 8.5vw;
+        width: 10vw;
     }
 
     #social {                 /* Redes Sociais */
     position: absolute;
-    top: 0%;
+    top: -8%;
     left: 45%;
 }
 
@@ -1046,7 +1055,11 @@ footer {
 
 .c-section__div {
     margin: 20% 5%;
-    color: var(--color-darkred);
+}
+
+.c-section__div address {
+    color: #014e81;
+    font-weight: bolder;
 }
 
 .c-section__div ul{
@@ -1060,7 +1073,7 @@ footer {
 }
 
 .icon li::before {
-    content: url(../img/icon/pinred.svg);
+    content: url(../img/icon/pinblue.svg);
     height: 2vh;
     width: 4vw;
     display: inline-block;
@@ -1068,11 +1081,11 @@ footer {
 }
 
 .c-section__div a {
-    color: var(--color-darkred);
+    color: var(--color-link_bg-hover);
 }
 
 .c-section__div a:hover {
-    color: rgb(221, 5, 5);
+    color: var(--color-link_border);
     font-size: 1.1em;
     font-weight: bolder;
 }
@@ -1133,11 +1146,21 @@ footer {
     }
     
     .icon li::before {
-        content: url(../img/icon/pinred.svg);
         height: 2vh;
-        width: 2vw;
+        width: 1.8vw;
         display: inline-block;
         padding-right: .5%;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
